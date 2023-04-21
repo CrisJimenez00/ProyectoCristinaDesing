@@ -157,17 +157,17 @@ $(document).ready(function () {
       $(this).html("-");
     }
   });
-  let fondo=true;
+  let fondo = true;
   /*Animacion icono del corazon */
   $(".icono-corazon").click(function () {
-    if(fondo){
+    if (fondo) {
       //Para que cambia
       $(this).attr("src", "img/iconos/corazonrelleno.svg");
-      fondo=false;
-    }else{
+      fondo = false;
+    } else {
       //Para que vuelva a su versión original
       $(this).attr("src", "img/iconos/corazon.svg");
-      fondo=true;
+      fondo = true;
     }
   });
 });
@@ -178,6 +178,18 @@ $(window).scroll(function () {
   } else {
     $("#volverarriba").fadeOut(900);
   }
+  $("#cambio-pagina li").hover(
+    function () {
+      // over
+      $(this).css("background-color", "#e28788");
+      $(this).css("color", "black");
+    },
+    function () {
+      // out
+      $(this).css("color", "#e28788");
+      $(this).css("background-color", "white");
+    }
+  );
 });
 
 $("#volverarriba").click(function (e) {

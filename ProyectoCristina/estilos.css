@@ -172,15 +172,18 @@ footer ul {
 }
 footer li {
   margin-top: 2rem;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 footer li.linea {
-  padding-right: 0.25rem;
+  
   border-right: 1px solid #fafafa;
-  padding-left: 1rem;
   text-align: center;
   align-items: center;
   width: 25%;
 }
+
 footer li.cookies {
   width: 25%;
   padding-left: 1rem;
@@ -395,8 +398,6 @@ nav {
   display: none;
 }*/ /*ESTÁ DESAPARECIDO PARA PODER TRATAR LA PÁGINA*/
 
-
-
 /*Versión ordenador*/
 /*@media all and (min-width: 1060px) {*/
 /*Iconos*/
@@ -430,4 +431,3 @@ nav {
     flex-direction: column;
     width: 40px;
   }*/
-

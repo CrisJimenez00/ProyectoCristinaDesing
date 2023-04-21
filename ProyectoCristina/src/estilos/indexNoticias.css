@@ -36,7 +36,6 @@ section article div.iconos-noticia img {
     width: 17rem;
     margin-left: 2rem;
     height: auto;
-    border: 3px solid red;
   }
   section article div.iconos-noticia {
     width: 10rem;
@@ -65,3 +64,20 @@ section article div.iconos-noticia img {
     width: 1.4rem;
   }
 }
+/*Número de pestañas*/
+ul#cambio-pagina{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+ul#cambio-pagina li{
+ font-size: 20px;
+ margin-left: 0.23rem;
+ color: #e28788;
+ padding: 1rem;
+}
+/*Para marcar la página en la que se está*/
+#cambio-pagina > li:nth-child(1){
+  font-weight: bold;
+}
+
