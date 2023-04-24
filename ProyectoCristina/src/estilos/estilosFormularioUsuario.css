@@ -1,71 +1,79 @@
-body {
-  background-image: url("../../img/image.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+h1,
+h2 {
+  color: #7293E0;
+}
+
+main {
+  width: 100vw;
   text-align: center;
+  justify-content: center;
+}
+
+/*Le damos estilo a la lista*/
+main ul,
+main li {
+  list-style: disc;
+  padding-left: 1rem;
+}
+
+form {
   display: flex;
+  text-align: center;
   flex-direction: column;
-  width: 90vw;
-  margin-left: 5vw;
 }
 
-
-a {
-  color: black;
+form input {
+  width: 20rem;
+  margin-left: 20vw;
+  height: 4vh;
 }
-#help {
-  color: darkblue;
+form label{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-
-
-p.note {
-  font-size: 1rem;
-  color: red;
+form a{
+  color: lightblue;
 }
-
-input {
-  border: 1px solid white;
-  padding: 4px;
-  width: 80%;
-  margin-top: 10px;
+form a:hover{
+  color: darkcyan;
 }
 
-label {
-  width: 100%;
-  font-weight: normal;
-  display: inline-block;
-  margin-top: 20px;
+main form button {
+  background-color: #7293E0;
+  color: #fafafafa;
+  padding: 0.75rem;
+  width: 5rem;
+  text-align: center;
+  margin-bottom: 2%;
+  margin-left: 13rem;
+  border-radius: 15%;
+  box-shadow: none;
+  margin-left:43vw;
 }
-
-label span {
-  font-size: 1rem;
-}
-
-label.error {
-  color: red;
-  font-size: 1rem;
-  display: block;
-  margin-top: 5px;
-}
-
-input.error {
-  border: 1px dashed red;
-  font-weight: 300;
-  color: red;
-}
-
-button {
-  border-radius: 30%;
-  background: #7293e0;
-  color: black;
-  border: none;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 1.25rem;
-}
-
-  @media all and (min-width: 1060px) {
-    button{
-      background-color: #e28788;
-    }
+@media all and (min-width: 600px) {
+  form input {
+    margin-left: 33vw;
+    width: 35vw;
   }
+  main form button{
+    margin-left: 45vw;
+  }
+}
+@media all and (min-width: 900px) {
+  form input {
+    margin-left: 35vw;
+    width: 30vw;
+  }
+  main form button{
+    margin-left: 46.5vw;
+  }
+}
+@media all and (min-width: 1000px) {
+  form input {
+    margin-left: 33vw;
+    width: 35vw;
+  }
+  main form button{
+    margin-left: 47.5vw;
+  }
+}

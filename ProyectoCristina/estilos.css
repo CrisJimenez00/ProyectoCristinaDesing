@@ -139,7 +139,7 @@ nav.menu ul ul {
   display: none;
 }
 /*Boton para subir la página*/
-button {
+body button#volverarriba {
   color: #e28788;
   border: 2px solid #e28788;
   position: fixed;
@@ -147,7 +147,7 @@ button {
   right: 0vw;
   padding: 1rem;
 }
-button:hover {
+body button#volverarriba:hover {
   background-color: #e28788;
   color: white;
 }
