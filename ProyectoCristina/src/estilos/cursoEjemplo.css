@@ -1,0 +1,46 @@
+main {
+  margin-left: 10%;
+}
+main article {
+  width: 90%;
+}
+
+main article video {
+  width: 90%;
+}
+
+main article img {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+article progress {
+  width: 100%;
+}
+
+div#controles {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+article button {
+  width: 2rem;
+}
+
+body > main > section > article > div > div > div {
+  width: 100%;
+}
+
+h4 {
+  border-bottom: 1px solid #fecbad;
+}
+
+main article #ejemplo_duda {
+  border: 1px solid #fecbad;
+  padding: 1em;
+}
+
+main article textarea {
+  width: 100%;
+}

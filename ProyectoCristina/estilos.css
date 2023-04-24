@@ -213,7 +213,8 @@ footer #siguenos {
   flex-direction: row;
   width: 100%;
 }
-footer #siguenos>li{
+
+footer #siguenos>li {
   padding-top: 1rem;
   align-items: center;
 }
@@ -228,3 +229,51 @@ footer small {
   width: 100%;
   padding-top: 2rem;
 }
+
+/*@media all and (min-width: 1000px) {
+  
+  .icono {
+    justify-content: space-around;
+    margin-right: 10rem;
+    text-align: center;
+  }
+
+  header a>span {
+    display: block;
+    color: black;
+    margin-left: -1rem;
+  }
+  header a>span#like {
+    margin-left: -3.5rem;
+  }
+
+  div.menu {
+    display: none;
+  }
+  nav.menu span{
+      display: none;
+    }
+  body>nav.menu  {
+    left:0;
+    border:1px solid red;
+    width: 100vw;
+    height: 2vh;
+    flex-direction: row;
+    top:7rem;
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+  body>nav.menu ul>li{
+    display: none;
+  }
+  body > nav  ul  ul > li{
+    display: block;
+    position: absolute;
+    margin-left:20rem;
+  }
+
+  main{
+
+    margin-top: 13vh;
+  }
+}*/
