@@ -1,235 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos/perfil.css" />
-    <title>Kunska</title>
-    <link
-      rel="shortcut icon"
-      href="../img/Logo empresa.png"
-      type="image/x-icon"
-    />
-    <script src="../jq/jquery-3.6.4.js" type="text/javascript"></script>
-    <script src="../jq/funciones.js" type="text/javascript"></script>
-    
-    <style>
-        body{
-            flex-direction: column;
-        justify-content: center;
-    }
-        #ejemplo_duda{
-            border:1px solid #fecbad;
-        padding: 1em; }
-        h4{
-            border-bottom: 1px solid #fecbad;
-        }
-        
-        textarea{
-            width: 100%;
-        }
-        div#contenido {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../estilos.css" />
+  <link rel="stylesheet" href="../src/estilos/perfil.css" />
+
+  <title>Kunska</title>
+  <link rel="shortcut icon" href="../img/logoRedimensionable.svg" type="image/x-icon" />
+
+  <script src="../jq/jquery-3.6.4.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  </script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script src="../jq/funciones.js" type="text/javascript"></script>
+  <script src="../jq/accion.js" type="text/javascript"></script>
+</head>
+<style>
+  main article div#contenido {
     width: 50%;
     text-align: left;
   }
-  article{
-    width: 50%;
-    
+
+  main article {
+    width: 90%;
+
   }
-  video{
-    width: 29em;
-    margin-left: -40%;
+
+  main article video {
+    width: 25rem;
+    padding-right: 7rem;
   }
-  progress {
-    width: 29em;
-    margin-left: -40%;
+
+  main article progress {
+    width: 20rem;
+    margin-right: 5rem;
   }
-  img {
-    height: 2em;
-    width: 2em;
+
+  main article img {
+    height: 1.5em;
+    width: 1.5em;
   }
-  div#controles {
+
+  article button {
+    width: 2rem;
+  }
+
+  main article div#controles {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 12em;
+    width: 21rem;
   }
-  @media all and (min-width: 550px) {
-    video{
-    margin-left: -30%;
+
+  main article #ejemplo_duda {
+    border: 1px solid #fecbad;
+    padding: 1em;
   }
-  progress {
-    margin-left: -30%;
+
+  main article textarea {
+    width: 100%;
   }
+
+  /* @media all and (min-width: 550px) {
+    video {
+      margin-left: -30%;
+    }
+
+    progress {
+      margin-left: -30%;
+    }
   }
+
   @media all and (min-width: 1000px) {
-    video{
-    margin-left:-25%;
-  }
-  progress {
-    margin-left: -25%;
-  }
-  article{width: 25%;}
-  }
-    </style>
-  </head>
+    video {
+      margin-left: -25%;
+    }
 
-  <body>
-    <!--Versión Móvil-->
+    progress {
+      margin-left: -25%;
+    }
 
-    <!--Header-->
-    <header>
-      <img
-        src="../img/logoRedimensionable.svg"
-        alt="Logo de la empresa Kunska"
-        class="logo"
-      />
-      <picture
-        ><a href="perfil.html"></a><img src="../img/iconos/icono-usuario.svg" alt="icono usuario" id="icono" />
-        <p> Mi cuenta</p></a></picture
-      >
-      <picture
-        ><img src="../img/iconos/corazon.svg" alt="icono corazon" id="icono" />
-        <p id="like">Cursos que me gustan</p></picture
-      >
+    article {
+      width: 25%;
+    }
+  }*/
+</style>
 
-      <div class="menu">
-        <div class="container nav-container">
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
+<body>
+  <!--Versión Móvil-->
+
+  <!--Header-->
+  <!--Menu version movil-->
+  <nav class="menu">
+    <span>Menú</span>
+    <ul>
+      <li class="item"><a href="../index.html"> Noticias</a><span>></span></li>
+      <ul class="noticias">
+        <li><a href="../index.html">Últimas noticias</a></li>
+        <li><a href="../index.html">Tus noticias favoritas</a></li>
+        <li><a href="../index.html">Noticias que te pueden gustar</a></li>
+      </ul>
+      <li class="item">
+        <a href="../src/indexCursos.html"> Cursos</a><span>></span>
+      </li>
+      <ul class="cursos">
+        <li><a href="../src/indexCursos.html">Últimos cursos</a></li>
+        <li><a href="../src/indexCursos.html">Mis cursos</a></li>
+        <li><a href="../src/indexCursos.html">Lista de cursos</a></li>
+      </ul>
+    </ul>
+  </nav>
+  <!--Header-->
+  <header>
+    <img src="../img/logo-empresa.png" alt="Logo de la empresa Kunska" id="logo" />
+
+    <a href="../src/formulariologin.html"><img src="../img/iconos/icono-usuario.svg" alt="icono login" id="iconologin"
+        class="icono" />
+      <span>Mi cuenta</span></a>
+    <a href=""><img src="../img/iconos/corazon.svg" alt="icono corazon" id="iconocorazon" class="icono" />
+      <span id="like">Noticias que me gustan</span></a>
+
+    <div class="menu">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+    </div>
+
+    <input type="text" name="buscador" id="buscadorinput" placeholder="Buscar..." />
+  </header>
+
+  <!--Cuerpo de la página-->
+  <main>
+    <h3><a href="../index.html">&#x276e; Atrás</a></h3>
+    <h2>Curso de ejemplo</h2>
+    <section>
+
+
+      <!--<article>
+        <div id="contenido">
+          <video id="reproductor" poster="../img/iconosVideo/trailer.png">
+            <source src="../videos/Kunska.mp4" type="video/mp4" />-->
+      <!--<source src="videos/videos/trailer.ogv" type='video/ogg; codecs="theora,vorbis"' />
+              <source src="videos/videos/trailer.webm" type='video/webm; codecs="vp8,vorbis"' />
+              -->
+      <!--<object>
+              <embed src="../img/iconosVideo/trailer.png" type="application/x-shockwave-flash" allowfullscreen="false"
+                alloscriptaccess="always" />
+            </object>
+
+          </video>
+
+          <div id="info">
+            <div id="tiempo">
+              <label id="visto">00:00</label>
+              /
+              <label id="total"></label>
+            </div>
+            <input type="range" id='barraTiempo' min="0" step="any">
+            <button id="maximizar">
+              <img src="../img/iconosVideo/maximizar.svg" width="30px" />
+            </button>
           </div>
-          <nav>
-            <ul class="menu">
-              <li><a href="../index.html"> Noticias</a></li>
-              <ul class="noticias">
-                <li><a href="../index.html">Últimas noticias</a></li>
-                <li><a href="../index.html">Tus noticias favoritas</a></li>
-                <li>
-                  <a href="../index.html">Noticias que te pueden gustar</a>
-                </li>
-              </ul>
-              <li><a href="indexCursos.html"> Cursos</a></li>
-              <ul class="cursos">
-                <li><a href="indexCursos.html">Últimos cursos</a></li>
-                <li><a href="indexCursos.html">Mis cursos</a></li>
-                <li><a href="indexCursos.html">Lista de cursos</a></li>
-              </ul>
-            </ul>
-          </nav>
-          <div class="menu-items">
-            <li><a href="../index.html">Noticias</a></li>
-            <li><a href="indexCursos.html">Cursos</a></li>
+
+          <div id="controles">
+            <button id="play" value="0"><img src="../img/iconosVideo/play.svg" width="30px" /></button>
+            <button id="stop"><img src="../img/iconosVideo/stop.svg" width="30px" /></button>
+            <button id="restart"><img src="../img/iconosVideo/reset.svg" width="30px" /></button>
+            <img src="../img/iconosVideo/bajar-volumen.svg" id="bajarVol" width="30px" alt="bajarVol">
+            <div>
+              <img id="altavoz" width="30px" height="30px" src="../img/iconosVideo/volumen.svg" />
+            </div>
+            <img src="../img/iconosVideo/subirvolumen.svg" id="subirVol" width="30px" alt="subirVol">
+            <button id="mute"><img src="../img/iconosVideo/silencio.svg" width="30px" /></button>
+            <button id="disminuirVel"><img src="../img/iconosVideo/slow.svg" width="30px" /></button>
+            <label id="velocidad"></label>
+            <button id="aumentarVel"><img src="../img/iconosVideo/fast.svg" width="30px" /></button>
+          </div>-->
+      <article>
+        <div id="contenido">
+          <video id="video" width="500" poster="../img/iconosVideo/trailer.png">
+            <source src="../videos/Kunska.mp4" type="video/mp4" />
+            Tu navegador no soporta el vídeo
+          </video>
+          <div id="progress-bar">
+            <progress id="progreso" max="100" value="0"></progress>
+          </div>
+          <div id="controles">
+            <button onclick="playPause()" id="play">
+              <img src="../img/iconosVideo/play.svg" alt="play" />
+            </button>
+            <button onclick="recarga()"><img src="../img/iconosVideo/reset.svg" alt="reset" /></button>
+            <button onclick="stop()"><img src="../img/iconosVideo/stop.svg" alt="stop" /></button>
+            <button onclick="bajarVelocidad()">
+              <img src="../img/iconosVideo/slow.svg" alt="bajar velocidad" />
+            </button>
+            <button onclick="subirVelocidad()">
+              <img src="../img/iconosVideo/fast.svg" alt="aumentar velocidad" />
+            </button>
+            <div class="control-volumen">
+              <button type="button" name="button">
+                <img src="../img/iconosVideo/volumen.svg" alt="volumen" class="volumen" />
+              </button>
+              <input type="range" value="100" min="0" max="100" step="1" id="volumen" />
+            </div>
+            <button onclick="normal()">
+              <img src="../img/iconosVideo/normal.svg" alt="restaurar tamaño" /></button><button onclick="minimizar()">
+              <img src="../img/iconosVideo/minimizar.svg" alt="minimizar" /></button><button onclick="maximizar()">
+              <img src="../img/iconosVideo/maximizar.svg" alt="maximizar" />
+            </button>
           </div>
         </div>
-      </div>
+      </article>
 
-      <p id="buscador">
-        <input
-          type="text"
-          name="buscador"
-          id="buscadorInput"
-          placeholder="Buscar..."
-        />
-      </p>
-    </header>
-    <nav>
-      <ul class="menu">
-        <ul class="noticias">
-          <a href="../index.html"> Noticias</a>
-          <li><a href="../index.html">Últimas noticias</a></li>
-          <li><a href="../index.html">Tus noticias favoritas</a></li>
-          <li><a href="../index.html">Noticias que te pueden gustar</a></li>
-        </ul>
-        <ul class="cursos">
-          <a href="indexCursos.html">Cursos</a>
-          <li><a href="indexCursos.html">Últimos cursos</a></li>
-          <li><a href="indexCursos.html">Mis cursos</a></li>
-          <li><a href="indexCursos.html">Lista de cursos</a></li>
-        </ul>
+
+      <article>
+        <h4>Contenido </h4>
+        <p><a href="#"> Capítulo1.pdf</a></p>
+        <h4> Dudas</h4>
+        <textarea name="dudas" id="duda" cols="20" rows="10" placeholder="Escribe tu duda..."></textarea>
+        <p>User001</p>
+        <p id="ejemplo_duda">Etiam a mi elit. Etiam ut felis metus. Nullam aliquam egestas porttitor. Sed vel nisl
+          eget quam sodales malesuada et vestibulum nisi. Cras imperdiet nec erat lacinia ultrices
+        </p>
+      </article>
+
+    </section>
+    <button id="volverarriba"><a href="#top">VOLVER ARRIBA</a></button>
+  </main>
+  <!--Footer-->
+  <footer>
+    <nav id="redes">
+      <ul>
+        <li class="linea">
+          <a href="../src/formularioEmpresa.html"> Encuéntranos</a>
+        </li>
+        <li class="linea">
+          <a href="../src/formularioEmpresa.html">Dinos tu opinión</a>
+        </li>
+        <li class="linea"><a href="../src/politicaPrivacidad.html">Politica de privacidad</a></li>
+        <li class="cookies"><a href="../src/politicaCookies.html"> Politica de cookies</a></li>
+        <div id="siguenos">
+          <li>Síguenos</li>
+          <ul>
+            <li><img src="../img/iconos/facebook.png" alt="Icono facebook" /></li>
+            <li>
+              <img src="../img/iconos/instagram.png" alt="Icono instagram" />
+            </li>
+            <li><img src="../img/iconos/gorjeo.png" alt="Icono twitter" /></li>
+          </ul>
+        </div>
       </ul>
     </nav>
+    <small>© Copyright 2022 Kunska Company. All Rights Reserved.</small>
+  </footer>
+</body>
 
-    <!--Cuerpo de la página-->
-    <main>
-      <h3><a href="../index.html">&#x276e; Atrás</a></h3>
-      <h2>Curso de ejemplo</h2>
-      <section>
-        
-        
-        <article>
-          <div id="contenido">
-            <video id="video" width="500"  poster="../img/iconosVideo/trailer.png">
-              <source src="../videos/Kunska.mp4" type="video/mp4" />
-              Tu navegador no soporta el vídeo
-            </video>
-            <div id="progress-bar">
-              <progress id="progreso" max="100" value="0"></progress>
-            </div>
-            <div id="controles">
-              <button onclick="playPause()" id="play">
-                <img src="../img/iconosVideo/play.svg" alt="play" />
-              </button>
-              <button onclick="recarga()"><img src="../img/iconosVideo/reset.svg" alt="reset" /></button>
-              <button onclick="stop()"><img src="../img/iconosVideo/stop.svg" alt="stop" /></button>
-              <button onclick="bajarVelocidad()">
-                <img src="../img/iconosVideo/slow.svg" alt="bajar velocidad" />
-              </button>
-              <button onclick="subirVelocidad()">
-                <img src="../img/iconosVideo/fast.svg" alt="aumentar velocidad" />
-              </button>
-              <div class="control-volumen">
-                <button type="button" name="button">
-                  <img src="../img/iconosVideo/volumen.svg" alt="volumen" class="volumen" />
-                </button>
-                <input
-                  type="range"
-                  value="100"
-                  min="0"
-                  max="100"
-                  step="1"
-                  id="volumen"
-                />
-              </div>
-              <button onclick="normal()">
-                <img src="../img/iconosVideo/normal.svg" alt="restaurar tamaño" /></button
-              ><button onclick="minimizar()">
-                <img src="../img/iconosVideo/minimizar.svg" alt="minimizar" /></button
-              ><button onclick="maximizar()">
-                <img src="../img/iconosVideo/maximizar.svg" alt="maximizar" />
-              </button>
-            </div>
-          </div>
-          </article>
-          
-        <article>
-            <h4>Contenido </h4>
-          <p><a href="#"> Capítulo1.pdf</a></p>
-            <h4> Dudas</h4>
-            <textarea name="dudas" id="duda" cols="20" rows="10" placeholder="Escribe tu duda..."></textarea>
-          <p>User001</p>
-          <p id="ejemplo_duda">Etiam a mi elit. Etiam ut felis metus. Nullam aliquam egestas porttitor. Sed vel nisl eget quam sodales malesuada et vestibulum nisi. Cras imperdiet nec erat lacinia ultrices
-        </p>
-          </article>
-          
-      </section>
-    </main>
-    <!--Footer-->
-    <footer>
-      <p><a href="formularioEmpresa.html"> Encuéntranos</a></p>
-      <p><a href="formularioEmpresa.html">Dinos tu opinión</a></p>
-      <p id="redes">
-        <label>Síguenos</label>
-        <img src="../img/iconos/facebook.png" alt="Icono facebook" />
-        <img src="../img/iconos/instagram.png" alt="Icono instagram" />
-        <img src="../img/iconos/gorjeo.png" alt="Icono twitter" />
-      </p>
-
-      <small>© Copyright 2022 Kunska Company. All Rights Reserved.</small>
-    </footer>
-    <script src="../jq/accion.js" type="text/javascript"></script><!--Lo pongo aquí porque si no me da errores y no funciona correctamente(sé que está de forma incorrecta)-->
-  </body>
 </html>

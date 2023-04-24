@@ -41,7 +41,7 @@ header img.icono {
   padding-right: 0.6rem;
 }
 
-header a > span {
+header a>span {
   display: none;
 }
 
@@ -86,6 +86,7 @@ header .menu .hamburger-lines {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
+
 /*Buscador*/
 header input#buscadorinput {
   background-color: #e28788;
@@ -94,7 +95,9 @@ header input#buscadorinput {
   flex: 100%;
   padding: 0.6rem;
   margin-top: 0.5rem;
-} /*Mirar lo del placeholder*/
+}
+
+/*Mirar lo del placeholder*/
 header input#buscadorinput::placeholder {
   color: #424242;
 }
@@ -111,33 +114,41 @@ nav.menu {
   display: flex;
   flex-direction: column;
 }
-nav.menu > span {
+
+nav.menu>span {
   font-weight: bold;
   font-size: 2rem;
 }
+
 nav.menu ul {
   display: flex;
   flex-direction: column;
 }
-nav.menu ul > li {
+
+nav.menu ul>li {
   border-bottom: 1px solid orange;
 }
+
 nav.menu .item {
   font-weight: bold;
   padding-top: 1rem;
 }
+
 nav.menu li {
   display: flex;
   justify-content: space-between;
   padding: 0.6rem 0 0.6rem 0;
 }
-nav.menu ul ul > li {
+
+nav.menu ul ul>li {
   margin-left: 1.5rem;
   border-bottom: 1px solid orange;
 }
+
 nav.menu ul ul {
   display: none;
 }
+
 /*Boton para subir la página*/
 body button#volverarriba {
   color: #e28788;
@@ -147,10 +158,12 @@ body button#volverarriba {
   right: 0vw;
   padding: 1rem;
 }
+
 body button#volverarriba:hover {
   background-color: #e28788;
   color: white;
 }
+
 /*Footer*/
 /*En general*/
 footer {
@@ -159,24 +172,28 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 footer,
 footer a {
   background-color: black;
   color: bisque;
 }
+
 footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 footer li {
   margin-top: 2rem;
   text-align: center;
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
 footer li.linea {
-  
+
   border-right: 1px solid #fafafa;
   text-align: center;
   align-items: center;
@@ -188,21 +205,24 @@ footer li.cookies {
   padding-left: 1rem;
   text-align: center;
 }
+
 /*Palabra siguenos*/
-footer li#siguenos {
+footer #siguenos {
   justify-content: center;
-  width: 100%;
-}
-/*Toda la parte de redes*/
-footer .redes {
   display: flex;
+  flex-direction: row;
   width: 100%;
-  justify-content: space-around;
 }
+footer #siguenos>li{
+  padding-top: 1rem;
+  align-items: center;
+}
+
 /*Imagenes*/
 footer img {
   width: 3rem;
 }
+
 /*Texto pequeño*/
 footer small {
   width: 100%;

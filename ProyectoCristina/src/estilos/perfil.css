@@ -1,0 +1,11 @@
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15vw;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+article p{
+    padding-left: 2rem;
+}
+
