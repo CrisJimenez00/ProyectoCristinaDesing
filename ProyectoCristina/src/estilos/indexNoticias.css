@@ -33,11 +33,13 @@ section article div.iconos-noticia img {
   section {
     text-align: center;
   }
+  
 
   section article picture > img {
-    width: 17rem;
+    width: 15rem;
     margin-left: 2rem;
     height: auto;
+    justify-content: space-between;
   }
   section article div.iconos-noticia {
     width: 10rem;
@@ -50,19 +52,29 @@ section article div.iconos-noticia img {
   section {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 86%;
+    
     justify-content: space-between;
     
   }
+  section h2{
+    margin-left: 2rem;
+    margin-right: -4.5rem;
+  }
   section > article {
     flex-direction: column;
-    width: 25%;
+    width: 20%;
+    margin-left: 1.5rem;
+  }
+  section > article picture > img{
+    width: 12rem;
   }
   section article div.iconos-noticia {
     width: 20rem;
     padding-left: 3rem;
   }
   section article div.iconos-noticia img {
+    margin-left: 1.5rem;
     width: 1.4rem;
   }
 }
