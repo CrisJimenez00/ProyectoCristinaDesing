@@ -109,7 +109,8 @@ nav.menu {
   width: 75vw;
   top: 7.3rem;
   background-color: #fafafa;
-  z-index: 1000;
+ 
+  z-index: 19999; /*Pongo ese número porque el pluggin tiene en las flechas un z-index de 9999*/
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -255,7 +256,11 @@ footer small {
     position: absolute;
     margin-left:20rem;
   }
-
+  /*Para que la imagen en version escritorio no sea demasiado grande*/
+  div.bxslider img{
+    height: 60vh;
+    width: 100%;
+  }
   /*icono {
     justify-content: space-around;
     margin-right: 10rem;

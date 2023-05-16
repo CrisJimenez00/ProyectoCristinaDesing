@@ -2,7 +2,9 @@
 $(document).ready(function(){
   var slider = $('.bxslider').bxSlider({
     mode: 'fade',
-    fast:1000000
+    fast:1000000,
+    adaptiveHeight: true,
+    adaptiveHeightSpeed: 750,
   });
   
   $('#slider-next').click(function(){
