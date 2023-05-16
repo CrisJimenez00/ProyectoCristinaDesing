@@ -52,29 +52,28 @@ section article div.iconos-noticia img {
   section {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 86%;
-    
+    width: 85vw;
     justify-content: space-between;
     
   }
   section h2{
-    margin-left: 2rem;
-    margin-right: -4.5rem;
+    margin-left: 3rem;
+    width: 100%;
   }
   section > article {
     flex-direction: column;
     width: 20%;
-    margin-left: 1.5rem;
+    justify-content: space-between;
   }
   section > article picture > img{
-    width: 12rem;
+    width: 100%;
+    margin-left: 3rem;
   }
   section article div.iconos-noticia {
     width: 20rem;
-    padding-left: 3rem;
+    margin-left: 3vw;
   }
   section article div.iconos-noticia img {
-    margin-left: 1.5rem;
     width: 1.4rem;
   }
 }

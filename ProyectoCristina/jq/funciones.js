@@ -4,7 +4,7 @@ $(document).ready(function(){
     mode: 'fade',
     fast:1000000,
     adaptiveHeight: true,
-    adaptiveHeightSpeed: 750,
+    adaptiveHeightSpeed: 450,
   });
   
   $('#slider-next').click(function(){

@@ -232,33 +232,35 @@ footer small {
 }
 
 @media all and (min-width: 1000px) {
+  main{
+    margin-top:7rem;
+  }
   div.menu {
     display: none;
   }
-  nav.menu span{
-      display: none;
+  nav.menu span ul{
+      /*display: inline;*/
     }
   body>nav.menu  {
     left:0;
     border:1px solid red;
-    width: 90vw;
+    width: 100%;
     height: 2vh;
+    display: flex;
     flex-direction: row;
-    top:7rem;
-    padding: 0;
-    margin-bottom: 5rem;
+    padding:1rem;
+    margin-top: 1rem;
   }
-  body>nav.menu ul>li{
+  body>nav.menu span {
+    display: none;
+  }
+  body > nav > ul > ul > li>a{
     display: block;
   }
-  body > nav  ul  ul > li{
-    display: block;
-    position: absolute;
-    margin-left:20rem;
-  }
+  
   /*Para que la imagen en version escritorio no sea demasiado grande*/
-  div.bxslider img{
-    height: 60vh;
+  div.bxslider {
+    height: 25rem;
     width: 100%;
   }
   /*icono {
