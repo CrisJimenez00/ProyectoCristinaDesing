@@ -1,7 +1,8 @@
 h1 {
-  color: #e28788;
+  color:#e28788;
   text-align: center;
 }
+
 /*Todas las noticias*/
 section {
   display: flex;
@@ -9,46 +10,57 @@ section {
   width: 100%;
   padding-left: 1rem;
 }
+
 section article {
   display: flex;
   flex-direction: row;
   padding-bottom: 2rem;
-  
+
 }
 
-section article picture > img {
+section article picture>img {
   width: 15rem;
   margin-right: 1rem;
   height: auto;
 }
+
 section article div.iconos-noticia {
   width: 5rem;
   text-align: start;
 }
+
 section article div.iconos-noticia img {
   width: 1.4rem;
   margin-right: 0.5rem;
 }
+
 @media all and (min-width: 600px) {
   section {
     text-align: center;
   }
-  
 
-  section article picture > img {
+
+  section article picture>img {
     width: 15rem;
     margin-left: 2rem;
     height: auto;
     justify-content: space-between;
   }
+
   section article div.iconos-noticia {
     width: 10rem;
   }
+
   section article div.iconos-noticia img {
     width: 1.4rem;
   }
 }
+
 @media all and (min-width: 1000px) {
+  header input#buscadorinput {
+    background-color: #FFE4A8;
+  }
+
   section {
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,43 +68,50 @@ section article div.iconos-noticia img {
     justify-content: space-between;
     padding-left: 5%;
   }
-  section h2{
+
+  section h2 {
     margin-left: 3rem;
     width: 100%;
   }
-  section > article {
+
+  section>article {
     flex-direction: column;
     width: 23%;
     justify-content: space-between;
   }
-  section > article picture > img{
+
+  section>article picture>img {
     width: 100%;
     margin-left: 3rem;
   }
+
   section article div.iconos-noticia {
     width: 10rem;
     margin-left: 3vw;
-}
+  }
+
   section article div.iconos-noticia img {
     width: 1.4rem;
   }
 }
+
 /*Slider*/
 
 /*Número de pestañas*/
-ul#cambio-pagina{
+ul#cambio-pagina {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-ul#cambio-pagina li{
- font-size: 20px;
- margin-left: 0.23rem;
- color: #e28788;
- padding: 1rem;
-}
-/*Para marcar la página en la que se está*/
-#cambio-pagina > li:nth-child(1){
-  font-weight: bold;
+
+ul#cambio-pagina li {
+  font-size: 20px;
+  margin-left: 0.23rem;
+  color: #e28788;
+  padding: 1rem;
 }
 
+/*Para marcar la página en la que se está*/
+#cambio-pagina>li:nth-child(1) {
+  font-weight: bold;
+}

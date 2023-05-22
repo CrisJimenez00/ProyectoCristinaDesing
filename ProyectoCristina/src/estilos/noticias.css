@@ -38,6 +38,13 @@ main #publi > ul > li img {
   main #publi > ul > li img {
     width: 15rem;
   }
+  main p{
+    width: 80%;
+    padding-left: 20%;
+  }
+  h1, h2{
+    padding-left: 10%;
+  }
 }
 @media all and (min-width: 1000px) {
   main #publi > ul > li {
@@ -47,4 +54,10 @@ main #publi > ul > li img {
   main #publi > ul > li img {
     width: 20rem;
   }
+  main p{
+    width: 80%;
+    padding-left: 20%;
+  }
+  
 }
+

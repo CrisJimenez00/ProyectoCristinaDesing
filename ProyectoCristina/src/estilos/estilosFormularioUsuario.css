@@ -27,10 +27,11 @@ form input {
   width: 55vw;
   margin-left: 18vw;
   height: 5vh;
+  margin-bottom: 3%;
 }
 form label{
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2%;
 }
 form a{
   color: lightblue;
@@ -45,18 +46,27 @@ main form button {
   padding: 0.75rem;
   width: 5rem;
   text-align: center;
+  margin-top: 5%;
   margin-bottom: 5%;
   border-radius: 15%;
   box-shadow: none;
   margin-left:37vw;
 }
+
 @media all and (min-width: 600px) {
   form input {
     margin-left: 20vw;
     width: 50vw;
   }
+  form label{
+    margin-bottom: 1%;
+  }
   main form button{
     margin-left: 40vw;
+    margin-top: 0%;
+  }
+  input{
+    margin-bottom: 2%;
   }
 }
 @media all and (min-width: 900px) {

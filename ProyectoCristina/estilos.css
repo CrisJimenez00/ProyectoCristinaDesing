@@ -41,7 +41,7 @@ header img.icono {
   padding-right: 0.6rem;
 }
 
-header a > span {
+header a>span {
   display: none;
 }
 
@@ -110,13 +110,14 @@ nav.menu {
   top: 7.3rem;
   background-color: #fafafa;
 
-  z-index: 19999; /*Pongo ese número porque el pluggin tiene en las flechas un z-index de 9999*/
+  z-index: 19999;
+  /*Pongo ese número porque el pluggin tiene en las flechas un z-index de 9999*/
   padding: 3rem;
   display: flex;
   flex-direction: column;
 }
 
-nav.menu > span {
+nav.menu>span {
   font-weight: bold;
   font-size: 2rem;
 }
@@ -126,7 +127,7 @@ nav.menu ul {
   flex-direction: column;
 }
 
-nav.menu ul > li {
+nav.menu ul>li {
   border-bottom: 1px solid orange;
 }
 
@@ -141,7 +142,7 @@ nav.menu li {
   padding: 0.6rem 0 0.6rem 0;
 }
 
-nav.menu ul ul > li {
+nav.menu ul ul>li {
   margin-left: 1.5rem;
   border-bottom: 1px solid orange;
 }
@@ -149,6 +150,7 @@ nav.menu ul ul > li {
 nav.menu ul ul {
   display: none;
 }
+
 nav.menu-ordenador {
   display: none;
 }
@@ -161,11 +163,20 @@ body button#volverarriba {
   bottom: 0px;
   right: 0vw;
   padding: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 body button#volverarriba:hover {
   background-color: #e28788;
   color: white;
+}
+
+body button#volverarriba img {
+  width: 3rem;
+  height: 3rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 /*Footer*/
@@ -217,14 +228,15 @@ footer #siguenos {
   width: 100%;
 }
 
-footer #siguenos > li {
+footer #siguenos>li {
   padding-top: 1rem;
   align-items: center;
 }
 
 /*Imagenes*/
 footer img {
-  width: 3rem;
+  margin-top: 0.5rem;
+  width: 2rem;
 }
 
 /*Texto pequeño*/
@@ -234,51 +246,79 @@ footer small {
 }
 
 @media all and (min-width: 1000px) {
-  header input#buscadorinput{
-    background-color: #FFE4A8;
+  header a>span {
+    display: block;
   }
+  header a{
+    margin-right: 3rem;
+    text-align: center;
+    order:3;
+  }
+  header a>img{
+    margin-left: 0.75rem;
+  }
+    
+  header input#buscadorinput {
+    background-color: #FFE4A8;
+    flex:5rem;
+    order:2;
+    margin-top: 2rem;
+    margin-right: 11rem;
+    margin-left: 11rem;
+  }
+
   main {
     margin-top: 7rem;
   }
+
   div.menu {
     display: none;
   }
+
   nav.menu {
     display: none;
   }
-  nav.menu-ordenador{
+
+  nav.menu-ordenador {
     position: absolute;
     width: 100%;
     top: 7rem;
-    z-index: 10000; /*Pongo ese número porque el pluggin tiene en las flechas un z-index de 9999*/
-    
+    z-index: 10000;
+    /*Pongo ese número porque el pluggin tiene en las flechas un z-index de 9999*/
+
     display: flex;
     flex-direction: row;
   }
-  nav.menu-ordenador>ul>li, nav.menu-ordenador span{
+
+  nav.menu-ordenador>ul>li,
+  nav.menu-ordenador span {
     display: none;
   }
-  body > nav.menu-ordenador > ul  {
+
+  body>nav.menu-ordenador>ul {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
   }
-  body > nav.menu-ordenador > ul > ul {
+
+  body>nav.menu-ordenador>ul>ul {
     display: flex;
     width: 100%;
     justify-content: space-around;
   }
-  body > nav.menu-ordenador > ul > ul.noticias {
+
+  body>nav.menu-ordenador>ul>ul.noticias {
     background-color: #e28788;
     padding: 1rem;
   }
-  body > nav.menu-ordenador > ul > ul.cursos {
+
+  body>nav.menu-ordenador>ul>ul.cursos {
     background-color: #7293E0;
     padding: 1rem;
   }
-  
-  body > nav.menu-ordenador > ul > ul > li > a{
+
+  body>nav.menu-ordenador>ul>ul>li>a {
     width: 25%;
     color: white;
   }
@@ -288,21 +328,5 @@ footer small {
     height: 25rem;
     width: 100%;
   }
-  /*icono {
-    justify-content: space-around;
-    margin-right: 10rem;
-    text-align: center;
-  }
-  header a>span {
-    display: block;
-    color: black;
-    margin-left: -1rem;
-  }
-  header a>span#like {
-    margin-left: -3.5rem;
-  }
-  main{
 
-    margin-top: 13vh;
-  }*/
 }
