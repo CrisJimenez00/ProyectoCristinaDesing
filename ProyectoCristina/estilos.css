@@ -130,7 +130,7 @@ nav.menu ul {
   flex-direction: column;
 }
 
-nav.menu ul>li {
+body > nav.menu > ul > li.item {
   border-bottom: 1px solid orange;
 }
 
@@ -160,6 +160,7 @@ nav.menu-ordenador {
 
 /*Boton para subir la página*/
 body button#volverarriba {
+  display:none;
   color: #e28788;
   border: 2px solid #e28788;
   position: fixed;
@@ -231,7 +232,7 @@ footer #siguenos {
   width: 100%;
 }
 
-footer #siguenos>li {
+#redes > ul > li {
   padding-top: 1rem;
   align-items: center;
 }
@@ -295,50 +296,52 @@ footer small {
     position: absolute;
     width: 100%;
     top: 7rem;
-    z-index: 10000;
+    z-index: 1000000;
     /*Pongo ese número porque el pluggin tiene en las flechas un z-index de 9999*/
-
-    display: flex;
-    flex-direction: row;
   }
-
-  nav.menu-ordenador>ul>li,
-  nav.menu-ordenador span {
+  nav.menu-ordenador .item, nav.menu-ordenador span{
     display: none;
   }
-
-  body>nav.menu-ordenador>ul {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
+  nav.menu-ordenador{
+    display: block;
+    
   }
-
-  body>nav.menu-ordenador>ul>ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+  nav.menu-ordenador .cursos,nav.menu-ordenador .noticias{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
   }
-
-  body>nav.menu-ordenador>ul>ul.noticias {
-    background-color: #e28788;
-    padding: 1rem;
+  nav.menu-ordenador .cursos{
+    margin-left: 50%;
+    margin-top: -2.15rem;
+    /*CAMBIA EL COLOR*/
+    background-color: #0e2431;
+    padding-bottom:0.5rem;
+    padding-top: 0.5rem;
   }
-
-  body>nav.menu-ordenador>ul>ul.cursos {
-    background-color: #7293E0;
-    padding: 1rem;
-  }
-
-  body>nav.menu-ordenador>ul>ul>li>a {
-    width: 25%;
+  nav.menu-ordenador .cursos li a{
     color: white;
   }
-
-  /*Para que la imagen en version escritorio no sea demasiado grande*/
-  div.bxslider {
-    height: 25rem;
-    width: 100%;
+  nav.menu-ordenador .noticias{
+    background-color: #e28788;
+    padding-bottom:0.5rem;
+    padding-top: 0.5rem;
   }
+  nav.menu-ordenador .noticias li a{
+    color: white;
+  }
+  
 
+ 
+
+}
+.bxslider {
+  height: 20rem; /* Establece la altura fija del slider */
+}
+
+.bxslider img {
+  aspect-ratio: 16/9;
+  width: 100%; /* Establece el ancho al 100% */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor */
 }
