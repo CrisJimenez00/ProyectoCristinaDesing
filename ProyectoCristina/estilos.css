@@ -232,9 +232,8 @@ footer #siguenos {
   width: 100%;
 }
 
-#redes > ul > li {
-  padding-top: 1rem;
-  align-items: center;
+#siguenos span {
+  padding-top: 3rem;
 }
 
 /*Imagenes*/
@@ -275,8 +274,8 @@ footer small {
     width: 2rem;
     margin-left: 8rem;
     margin-top: 2rem;
-    padding-top:0.1rem;
-    padding-bottom:0.03rem;
+    padding-top:0.11rem;
+    padding-bottom:0.1rem;
     background-color: #FFE4A8;
   }
 

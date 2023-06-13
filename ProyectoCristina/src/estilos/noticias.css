@@ -13,29 +13,30 @@ main #noticia picture > img {
   width: 100%;
 }
 /*Parte de noticias que pueden interesar*/
-main #publi > ul {
+#publi > li:nth-child(2) > ul {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 /*Cada noticia que puede interesar por separado*/
-main #publi > ul > li {
+main #publi>li>ul>li {
   display: flex;
   flex-direction: column;
   width: 8rem;
   font-weight: bold;
 }
 /*Imagenes de las noticias*/
-main #publi > ul > li img {
+main #publi>li>ul>li img {
   width: 8rem;
 }
 @media all and (min-width: 600px) {
-  main #publi > ul > li {
+  main #publi>li>ul>li {
     width:10rem;
     font-weight: bold;
   }
-  main #publi > ul > li img {
+  main #publi>li>ul>li img {
     width: 11rem;
   }
   main p{
@@ -47,11 +48,11 @@ main #publi > ul > li img {
   }
 }
 @media all and (min-width: 1000px) {
-  main #publi > ul > li {
+  main #publi>li>ul>li {
     width: 20rem;
     font-weight: bold;
   }
-  main #publi > ul > li img {
+  main #publi>li>ul>li img {
     width: 20rem;
   }
   main p{

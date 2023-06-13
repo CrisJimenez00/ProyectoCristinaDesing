@@ -143,10 +143,131 @@ $(document).ready(function () {
       }
     );
   });
+
+  //formularios
+  //login
+  // Función para validar los campos del formulario
+  function validarFormulario() {
+    var usuario = $('#usuario').val();
+    var clave = $('#clave').val();
+    var mensajeError = '';
+    var mensajeUsuario = $('#mensaje-usuario');
+    var mensajeClave = $('#mensaje-clave');
+
+    mensajeUsuario.text('');
+    mensajeClave.text('');
+
+    if (usuario.length < 8 || usuario.length > 20) {
+      mensajeError = 'El usuario debe tener entre 8 y 20 caracteres.';
+      mensajeUsuario.text(mensajeError);
+    }
+
+    if (usuario.indexOf('@') === -1) {
+      mensajeError = 'El usuario debe contener un símbolo @.';
+      mensajeUsuario.text(mensajeError);
+    }
+
+    if (clave.length < 6 || clave.length > 20) {
+      mensajeError = 'La contraseña debe tener entre 6 y 20 caracteres.';
+      mensajeClave.text(mensajeError);
+    }
+
+    if (usuario === '') {
+      mensajeError = 'El campo de usuario no puede estar vacío.';
+      mensajeUsuario.text(mensajeError);
+    }
+
+    if (clave === '') {
+      mensajeError = 'El campo de contraseña no puede estar vacío.';
+      mensajeClave.text(mensajeError);
+    }
+
+    // Mostrar mensajes de error o enviar el formulario
+    if (mensajeError !== '') {
+      return false; // Evitar el envío del formulario si hay errores
+    } else {
+      // Aquí puedes agregar lógica adicional antes de enviar el formulario
+      return true; // Permitir el envío del formulario
+    }
+  }
+
+  // Escuchar el evento de envío del formulario
+  $('#formulario').submit(function (event) {
+    event.preventDefault(); // Evitar el envío del formulario por defecto
+
+    // Validar el formulario antes de enviarlo
+    if (validarFormulario()) {
+      // Aquí puedes agregar lógica adicional antes de enviar el formulario
+      this.submit(); // Enviar el formulario
+    }
+  });
+
+
+
+  //usuario nuevo
+  $('#formulario-alta').submit(function (e) {
+    e.preventDefault();
+    // Limpiar mensajes de error
+    $('.mensaje-error').text('');
+
+    // Obtener los valores de los campos
+    var usuario = $('#usuario').val();
+    var nombreUsuario = $('#nombre-usuario').val();
+    var nombrePersona = $('#nombre-persona').val();
+    var clave = $('#clave').val();
+    var claveRepetida = $('#clave-repetida').val();
+
+    // Validar campos vacíos
+    if (usuario === '') {
+      $('#mensaje-usuario').text('El campo de correo electrónico no puede estar vacío');
+      return;
+    }
+    // Validar correo electrónico
+    if (!usuario.includes('@')) {
+      $('#mensaje-usuario').text('El correo electrónico debe contener un "@"');
+      return;
+    }
+
+    if (nombreUsuario === '') {
+      $('#mensaje-nombre-usuario').text('El campo de nombre de usuario no puede estar vacío');
+      return;
+    }
+    // Validar nombre de usuario
+    if (nombreUsuario.length < 8) {
+      $('#mensaje-nombre-usuario').text('El nombre de usuario debe tener al menos 8 caracteres');
+      return;
+    }
+
+    if (nombrePersona === '') {
+      $('#mensaje-nombre-persona').text('El campo de nombre no puede estar vacío');
+      return;
+    }
+    // Validar nombre de persona
+    if (nombrePersona.length < 6) {
+      $('#mensaje-nombre-persona').text('El nombre debe tener al menos 6 caracteres');
+      return;
+    }
+
+    if (clave === '') {
+      $('#mensaje-clave').text('El campo de contraseña no puede estar vacío');
+      return;
+    }
+
+    if (claveRepetida === '') {
+      $('#mensaje-clave').text('El campo de repetir contraseña no puede estar vacío');
+      return;
+    }
+    // Validar contraseñas
+    if (clave !== claveRepetida) {
+      $('#mensaje-clave').text('Las contraseñas no coinciden');
+      return;
+    }
+
+
+    // Si todos los campos son válidos, enviar el formulario
+    $('#formulario-alta')[0].submit();
+
+  });
+
   //Final del document ready
-});
-
-
-$(document).ready(function () {
-
 });

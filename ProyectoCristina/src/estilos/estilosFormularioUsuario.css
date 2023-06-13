@@ -55,6 +55,9 @@ main form button {
   box-shadow: none;
   margin-left: 37vw;
 }
+form div{
+color: red;
+}
 
 @media all and (min-width: 600px) {
   form input {
@@ -71,7 +74,7 @@ main form button {
     margin-top: 0%;
   }
 
-  input {
+  form input {
     margin-bottom: 2%;
   }
 }
@@ -89,9 +92,7 @@ main form button {
 
 @media all and (min-width: 1000px) {
   header img#lupa {
-    margin-top: 0.75rem;
-    padding-top: 0.1rem;
-    padding-bottom: 0.03rem;
+    margin-top: 32px;
   }
 
   form input {
@@ -101,43 +102,5 @@ main form button {
 
   main form button {
     margin-left: 42.5vw;
-  }
-}
-
-@media all and (min-width: 1054px) {
-  header img#lupa {
-    margin-top: 5.5%;
-
-  }
-}
-
-@media all and (min-width: 1000px) {
-  header img#lupa {
-    /*margin-top: 50%;
-   */
-  }
-}
-
-@media all and (min-width: 1104px) {
-  header img#lupa {
-    margin-top: 5%;
-    padding-top: 0.125rem;
-    padding-bottom: 0rem;
-  }
-}
-
-@media all and (min-width: 1110px) {
-  header img#lupa {
-    margin-top: 0.4rem;
-    padding-top: 0.125rem;
-    padding-bottom: 0rem;
-  }
-}
-
-@media all and (min-width: 1115px) {
-  header img#lupa {
-    margin-top: 0.34rem;
-    padding-top: 0.125rem;
-    padding-bottom: 0rem;
   }
 }
