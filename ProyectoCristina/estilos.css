@@ -157,6 +157,16 @@ nav.menu ul ul {
 nav.menu-ordenador {
   display: none;
 }
+/*Slider*/
+.bxslider {
+  height: 20rem; /* Establece la altura fija del slider */
+}
+
+.bxslider img {
+  aspect-ratio: 16/9;
+  width: 100%; /* Establece el ancho al 100% */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
 
 /*Boton para subir la página*/
 body button#volverarriba {
@@ -249,6 +259,9 @@ footer small {
 }
 
 @media all and (min-width: 1000px) {
+  .bxslider img {
+    height: 300px;
+  }
   header a>span {
     display: block;
   }
@@ -274,8 +287,8 @@ footer small {
     width: 2rem;
     margin-left: 8rem;
     margin-top: 2rem;
-    padding-top:0.11rem;
-    padding-bottom:0.1rem;
+    padding-top:0rem;
+    padding-bottom:0.11rem;
     background-color: #FFE4A8;
   }
 
@@ -334,12 +347,4 @@ footer small {
  
 
 }
-.bxslider {
-  height: 20rem; /* Establece la altura fija del slider */
-}
 
-.bxslider img {
-  aspect-ratio: 16/9;
-  width: 100%; /* Establece el ancho al 100% */
-  object-fit: cover; /* Ajusta la imagen dentro del contenedor */
-}
